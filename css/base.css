@@ -1,0 +1,45 @@
+/* 公共样式 */
+
+/* 1.样式重置 */
+html,body,div,ul,li,img,a,p,form,input{
+    margin: 0;
+    padding: 0;
+    /* 设置盒模型 */
+    box-sizing: border-box;
+    /* 祛除移动端点击高亮效果 */
+    -webkit-tap-highlight-color: transparent;
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+body{
+    color: #ccc;
+    font-size: 13px;
+    font-family: "微软雅黑" sans-serif;
+}
+a,
+a:hover{
+    text-decoration: none;
+    color: #666;
+}
+ul{
+    list-style: none;
+}
+input{
+    outline: none;
+    /* 去除边框 */
+    border: none;
+    /* 添加边框 */
+    border: 1px solid #ccc;
+}
+/* 2.添加新样式 */
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0px;
+    line-height: 0px;
+    clear: both;
+    visibility: hidden;
+}
