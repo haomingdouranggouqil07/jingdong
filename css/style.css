@@ -1,3 +1,9 @@
+body{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .jd-search{
     width: 100%;
     top: 0;
@@ -8,6 +14,7 @@
     height: 44px;
     background: transparent;
     padding-right: 50px;
+    z-index: 999;
 }
 
 .jd-search .jd-search-mulu{
@@ -26,6 +33,8 @@
     padding-left: 50px;
     height:44px;
     position: relative;
+    margin: 0 auto;
+    width: 100%;
 }
 .jd-search .jd-search-logo{
     width: 20px;
@@ -81,12 +90,39 @@
 
 /* 轮播图代码 */
 .jd-lunbo{
-    max-width: 640px;
-    min-width: 320px;
     width: 100%;
-    min-height: 9.15rem;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+.jd-lunbo ul{
+    position: relative;
+    animation: lunbomove 20s ease 3s infinite;
+}
+.jd-lunbo > ul >li{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.jd-lunbo > ul li.lunbo0{
+    position: relative;
+    left: 0;
+}
+.jd-lunbo > ul .lunbo1{
+    left: 100%;
+}
+.jd-lunbo > ul .lunbo2{
+    left: 200%;
+}
+.jd-lunbo > ul .lunbo3{
+    left: 300%;
+}
+.jd-lunbo > ul .lunbo4{
+    left: 400%;
+}
+.jd-lunbo > ul .lunbo5{
+    left: 500%;
 }
 .jd-lunbo li a{
     display: block;
@@ -94,15 +130,17 @@
 .jd-lunbo li img{
     width: 100%;
     height: 100%;
-    margin-top: -44px;
+}
+.jd-lunbo .jd-lunbo-btn{
+
 }
 /* 菜单栏 */
 .jd-nav{
     margin: 0 auto;
 }
 .jd-nav ul{
-    max-width: 640px;
-    min-width: 320px;
+    width: 100%;
+
 }
 .jd-nav ul>li{
     float: left;
@@ -183,4 +221,120 @@
     border-left: 1px solid #ccc;
     right: .4rem;
     padding-left: .5rem;
+}
+
+/* 京东秒杀 */
+.jd-skill{
+    position: relative;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;;
+}
+.jd-skill .jd-skill-logo{
+    display: inline-block;
+    margin: .1rem .15rem 0;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: #f02b2b;
+    font-weight: 700;
+}
+.jd-skill .jd-skill-goal{
+    font-weight: 700px;
+    display: inline-block;
+    height: 2rem;
+}
+.jd-skill .jd-skill-goal span{
+    color: black;
+    font-weight: 700;
+    line-height: 2.3rem;
+    font-size: .8rem;
+}
+.jd-skill .jd-skill-time{
+    margin-left: .4rem;
+    height: 1.7rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.jd-skill .jd-skill-time span{
+    display: inline-block;
+    font-size: .8rem;
+    width: .2rem;
+    /* line-height: 2.3rem; */
+}
+.jd-skill .jd-skill-time span:nth-child(2n+1){
+    display: inline-block;
+    height: .8rem;
+    width: inherit;
+    border: 1px solid #ccc;
+    line-height: .8rem;
+    padding: .1rem;
+}
+.jd-skill .jd-skill-more{
+    float: right;
+}
+.jd-skill .jd-skill-more a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    color: #f02b2b;
+    line-height: 2.3rem;
+    padding-right: 22px;
+}
+.jd-skill .jd-skill-morelogo{
+    width: 11px;
+    height: 11px;
+    background: url(../images/arrow_rt.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+}
+.jd-skill .jd-skill-goods{
+    max-width: 640px;
+    min-width: 320px;
+    overflow: hidden;
+}
+.jd-skill .jd-skill-goods ul{
+    width: 1000px;
+}
+.jd-skill .jd-skill-goods ul li{
+    float: left;
+    width: 78px;
+}
+.jd-skill .jd-skill-goods img{
+    width: 78px;
+}
+.jd-skill .jd-skill-goods .new{
+    margin-top: 10px;
+    display: block;
+    color: #f23030;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+.jd-skill .jd-skill-goods .old{
+    margin-top: 10px;
+    display: block;
+    color: #686868;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+@keyframes lunbomove
+{
+    0% {left: 0%;}
+    19% {left: 0%;}
+    20% {left: -100%;}
+    39% {left: -100%;}
+    40% {left: -200%;}
+    59% {left: -200%;}
+    60% {left: -300%;}
+    79% {left: -300%;}
+    80% {left: -400%;}
+    99% {left: -400%;}
+    100% {left: -500%;}
 }
