@@ -87,7 +87,9 @@ body{
     font-size: 14px;
     line-height: 44px;
 }
-
+.jd-search .jd-search-denglu:hover{
+    background-color: #ccc;
+}
 /* 轮播图代码 */
 .jd-lunbo{
     width: 100%;
@@ -130,9 +132,6 @@ body{
 .jd-lunbo li img{
     width: 100%;
     height: 100%;
-}
-.jd-lunbo .jd-lunbo-btn{
-
 }
 /* 菜单栏 */
 .jd-nav{
@@ -337,4 +336,8 @@ body{
     80% {left: -400%;}
     99% {left: -400%;}
     100% {left: -500%;}
+}
+
+.denglu{
+    display: none;
 }

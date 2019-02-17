@@ -1,0 +1,73 @@
+header{
+    margin: 10px 20px;
+}
+header .header-back{
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background: url(../login-images/login.png) no-repeat;
+    background-size: 100% auto;
+}
+header .header-txt{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+}
+section{
+    margin: 10px;
+    position: relative;
+}
+section form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #efefef;
+    color: #222;
+}
+section form .showpassword{
+    background: url(../login-images/buxianshi.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 86px;
+    bottom: 10px;
+    z-index: 50;
+    background-size: 100% auto;
+}
+section form button{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    padding: 1px 6px 1px 16px;
+    background-color: #fff;
+    border: none;
+    border-left: 1px solid #ccc;
+}
+.jd-logincontainer{
+    padding:0 10px;
+}
+.login-btn{
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(90deg,#fab3b3,#ffbcb3 73%,#ffcaba);
+}
+.regist-btn{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid #ff2000;
+    color: #f10000;
+    background: #fff;
+}

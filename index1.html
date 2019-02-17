@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jd-login.css">
+    <script src="js/skill.js" async="async"></script>
+    
+</head>
+<body>
+    <div class="home">
+        <div class="jd-search">
+            <div class="jd-search-mulu"></div>
+            <form action="">
+                <div class="jd-search-logo"></div>
+                <div class="jd-search-btn"></div>
+                <input type="text" placeholder="PLUS尊享限量款炫耀红天鹅手链">
+                <div class="jd-search-denglu">登录</div>
+            </form>
+        </div>
+        <div class="jd-lunbo">
+            <ul>
+                <li class="lunbo0"><a href=""><img src="images/lunbo0.jpg" alt=""></a></li>
+                <li class="lunbo1"><a href=""><img src="images/lunbo1.jpg" alt=""></a></li>
+                <li class="lunbo2"><a href=""><img src="images/lunbo3.jpg" alt=""></a></li>
+                <li class="lunbo3"><a href=""><img src="images/lunbo4.jpg" alt=""></a></li>
+                <li class="lunbo4"><a href=""><img src="images/lunbo10.jpg" alt=""></a></li>
+                <li class="lunbo5"><a href=""><img src="images/lunbo0.jpg" alt=""></a></li>
+            </ul>
+            <div class="jd-lunbo-btn"></div>
+        </div>
+        <div class="jd-nav">
+            <ul class="clearfix">
+                <li><a href=""><img src="images/chaoshi.png" alt=""><span>京东超市</span></a></li>
+                <li><a href=""><img src="images/quanqiu.png" alt=""><span>海囤全球</span></a></li>
+                <li><a href=""><img src="images/jingdongfushi.png" alt=""><span>京东服饰</span></a></li>
+                <li><a href=""><img src="images/jingdongshengxian.png" alt=""><span>京东生鲜</span></a></li>
+                <li><a href=""><img src="images/jingdongdaojia.png" alt=""><span>京东到家</span></a></li>
+                <li><a href=""><img src="images/chaoshi.png" alt=""><span>京东超市</span></a></li>
+                <li><a href=""><img src="images/quanqiu.png" alt=""><span>海囤全球</span></a></li>
+                <li><a href=""><img src="images/jingdongfushi.png" alt=""><span>京东服饰</span></a></li>
+                <li><a href=""><img src="images/jingdongshengxian.png" alt=""><span>京东生鲜</span></a></li>
+                <li><a href=""><img src="images/jingdongdaojia.png" alt=""><span>京东到家</span></a></li>
+            </ul>
+        </div>
+        <div class="jd-news clearfix">
+            <div class="jd-news-logo"><img src="images/jdkuaibao.jpg" alt=""></div>
+            <div class="jd-news-container">
+                <ul>
+                    <li><span>最新</span>华为5G新机亮相，麒麟985+AI高清摄像头</li>
+                </ul>
+            </div>
+            <div class="jd-news-more">更多</div>
+        </div>
+        <div class="jd-skill">
+            <div class="jd-skill-logo">京东秒杀</div>
+            <div class="jd-skill-goal"><span>22点场</span></div>
+            <div class="jd-skill-time" id="time">
+                <span>01</span>
+                <span>:</span>
+                <span>23</span>
+                <span>:</span>
+                <span>36</span>
+            </div>
+            <div class="jd-skill-more"><a href="">更多秒杀</a></div>
+            <div class="jd-skill-morelogo"></div>
+            <div class="jd-skill-goods">
+                <ul>
+                    <li>
+                        <div class="jd-goods-img"><img src="images/skill-goods.jpg" alt=""></div>
+                        <span class="new">¥39.9</span>
+                        <span class="old">¥119</span>
+                        </li>
+                    <li>
+                        <div class="jd-goods-img"><img src="images/skill-goods.jpg" alt=""></div>
+                        <span class="new">¥39.9</span>
+                        <span class="old">¥119</span>
+                        </li>
+                    <li>
+                        <div class="jd-goods-img"><img src="images/skill-goods.jpg" alt=""></div>
+                        <span class="new">¥39.9</span>
+                        <span class="old">¥119</span>
+                    </li>
+                    <li>
+                        <div class="jd-goods-img"><img src="images/skill-goods.jpg" alt=""></div>
+                        <span class="new">¥39.9</span>
+                        <span class="old">¥119</span>
+                    </li>
+                    <li>
+                        <div class="jd-goods-img"><img src="images/skill-goods.jpg" alt=""></div>
+                        <span class="new">¥39.9</span>
+                        <span class="old">¥119</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <header>
+            <div class="header-back"></div>
+            <div class="header-txt">京东登录</div>
+        </header>
+        <section>
+            <form action="">
+                <input type="text" placeholder="用户名/邮箱/已验证手机" id="username">
+                <input type="password" placeholder="请输入密码">
+                <div class="showpassword"></div>
+                <button>忘记密码</button>
+            </form>
+        </section>
+        <div class="jd-logincontainer">
+            <div class="login-btn" id="login-btn">登 录</div>
+            <div class="regist-btn">一键登录</div>
+        </div>
+        <script>
+            var userName = document.getElementById("username");
+            var loginbtn = document.getElementById("login-btn");
+            var registbtn = document.querySelector("regist-btn");
+            loginbtn.onclick = function(){
+                var xhr = new XMLHttpRequest();
+                xhr.open("post", "./PHP/loginCheck.php");            
+                xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                // 注册回调函数
+                xhr.onload = function(){
+                    if (xhr.responseText == "true"){
+                        loginbtn.innerHTML = "正确";
+                    }else{
+                        loginbtn.innerHTML = "密码错误";
+                        loginbtn.style.backgroundColor = "white";
+                        loginbtn.style.border = "1px solid red"
+                        loginbtn.style.color = "red";
+                        loginbtn.style.backgroundImage = "none";
+                    }
+                }            
+                xhr.send('name=jack&skill=swim');
+            }
+        </script>
+    </div>
+    <script src="js/denglu.js"></script>
+</body>
+</html>
